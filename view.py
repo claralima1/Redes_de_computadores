@@ -18,5 +18,5 @@ class View:
         Verifica.atualizar(c)
     @staticmethod
     def excluir(id:int):
-        c = Verifica(id, "", "", "")
+        c = Verifica( "", "", "")
         Verifica.excluir(c)

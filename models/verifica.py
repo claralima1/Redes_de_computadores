@@ -2,8 +2,7 @@ import re
 import json
 
 class Verifica:
-    def __init__(self, id, ip1, ip2, mascara):
-        self.id = id
+    def __init__(self, ip1, ip2, mascara):
         self.ip1 = ip1
         self.ip2 = ip2
         self.mascara = mascara
@@ -89,7 +88,7 @@ class Verifica:
     
     def __str__(self):
         return f"IP 1: {self.ip1}\nIP 2: {self.ip2}\nMask: {self.mascara}"
-    
+'''    
 class persistencia:
 
     objetos = []               
@@ -145,7 +144,7 @@ class persistencia:
                   cls.objetos.append(c)
         except FileNotFoundError:
           pass   
-
+'''
     
 
     

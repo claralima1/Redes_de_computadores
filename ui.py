@@ -10,3 +10,4 @@ class InicioUI:
         if st.button("Verificar"):
             v = Verifica(a, b, c)
             st.write(v)
+            
