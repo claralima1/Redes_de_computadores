@@ -121,12 +121,14 @@ class persistencia:
             x.ip2 = obj.ip2
             x.mascara = obj.mascara
             cls.salvar()
+
     @classmethod
     def excluir(cls, obj):
         x = cls.listar_id(obj.id) 
         if x != None: 
             cls.objetos.remove(x)
             cls.salvar()
+            
     @classmethod
     def salvar(cls):    
         with open("../verif.json", mode="w") as arquivo:
